@@ -14,6 +14,7 @@ public class BaseViewModel : INotifyPropertyChanged
 
             isBusy = value;
             OnPropertyChanged();
+            OnPropertyChanged(nameof(isNotBusy));
         }
     }
 
@@ -29,7 +30,7 @@ public class BaseViewModel : INotifyPropertyChanged
         }
     }
 
-    
+    public bool isNotBusy => !isBusy;
 
     public event PropertyChangedEventHandler PropertyChanged;
 
