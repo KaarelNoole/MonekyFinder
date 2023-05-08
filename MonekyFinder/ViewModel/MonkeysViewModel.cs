@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
-namespace ViewModel
+namespace ViewModel;
+
+public partial class MonkeysViewModel : BaseViewModel
 {
-    internal class MonkeysViewModel
-    {
-    }
 }
