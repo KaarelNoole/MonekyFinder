@@ -1,5 +1,6 @@
 ﻿using MonekyFinder.View;
 using Services;
+using View;
 
 namespace MonekyFinder;
 
@@ -18,8 +19,10 @@ public static class MauiProgram
 		builder.Services.AddSingleton<MonkeyService>();
 
 		builder.Services.AddSingleton<MonkeysViewModel>();
+		builder.Services.AddTransient<MonkeyDetailsViewModel>();
 
 		builder.Services.AddSingleton<MainPage>();
+		builder.Services.AddTransient<DetailsPage>();
 
 		return builder.Build();
 	}
