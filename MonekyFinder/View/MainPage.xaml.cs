@@ -1,11 +1,12 @@
-﻿namespace MonekyFinder;
+﻿namespace MonekyFinder.View;
 
 public partial class MainPage : ContentPage
 {
 
-	public MainPage()
+	public MainPage(MonkeysViewModel viewModel)
 	{
 		InitializeComponent();
+		BindingContext = viewModel;
 	}
 }
 

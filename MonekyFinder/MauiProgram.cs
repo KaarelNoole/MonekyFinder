@@ -1,4 +1,7 @@
-﻿namespace MonekyFinder;
+﻿using MonekyFinder.View;
+using Services;
+
+namespace MonekyFinder;
 
 public static class MauiProgram
 {
@@ -11,6 +14,10 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 			});
+
+		builder.Services.AddSingleton<MonkeyService>();
+
+		builder.Services.AddSingleton<MonkeysViewModel>();
 
 		builder.Services.AddSingleton<MainPage>();
 
