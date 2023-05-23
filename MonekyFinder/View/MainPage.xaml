@@ -24,7 +24,7 @@
                         SelectionMode="None">
                         <!--EmptyView="Empty"-->
                             
-                <CollectionView.EmptyView>
+                <!--<CollectionView.EmptyView>
                     <StackLayout VerticalOptions="Center"
                                  HorizontalOptions="Center"
                                  WidthRequest="200"
@@ -35,7 +35,7 @@
                                Aspect="AspectFill" />
 
                     </StackLayout>
-                </CollectionView.EmptyView>
+                </CollectionView.EmptyView>-->
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Monkey">
                         <Grid Padding="10">
